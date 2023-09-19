@@ -1,0 +1,38 @@
+.tutor-page .contents .container .tutor-page-title {
+    font-family: "GMarket Sans Medium";
+}
+
+.tutor-page .contents .container .tutor-page-desc {
+    font-family: "GMarket Sans Medium";
+}
+
+.tutor-page .contents .container .tutor-page-text {
+    font-family: "GMarket Sans Medium";
+}
+
+.tutor-page .contents .container .tutor-page-text.mt50 {
+    font-size: 18px;
+}
+
+.tutor-page .contents .container .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tutor-page .contents .container .warning {
+    color: var(--primary-color);
+}
+
+.tutor-page .contents .container .underline {
+    text-decoration: var(--primary-color) wavy underline;
+}
+
+.tutor-page .contents .container code {
+    background: #5c3af41d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "GMarket Sans Medium", 'Courier New', monospace;
+    font-size: 14px;
+    margin-right: 5px;
+    color: var(--primary-color);
+}

@@ -1,0 +1,48 @@
+.login-page .contents .container {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page .contents .container .login-page-form input {
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-family: "GMarket Sans Medium";
+    font-size: 14px;
+    border: 0;
+    font-size: 14px;
+    outline: none;
+    background: #f5f5f5;
+    border: 1px solid #e2e2e2;
+    width: 250px;
+    transition: .2s;
+}
+
+.login-page .contents .container .login-page-form input:focus {
+    outline: 2px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.login-page .contents .container .login-page-form button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    border: 1px solid #e2e2e2;
+    font-family: "GMarket Sans Medium";
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-page .contents .container .login-page-form button.primary {
+    background: var(--primary-color);
+    border: 1px solid #462cbc;
+    color: #ffffff;
+}
+
+.login-page .contents .container .login-page-form p.warning {
+    color: var(--primary-color);
+    font-family: "GMarket Sans Medium";
+    font-size: 14px;
+}
