@@ -137,6 +137,12 @@ app.post(`/transaction/list`, (req, res) => {
 
     connection.query(`SELECT * FROM transactions WHERE family_name = ? ORDER BY node_id DESC`, [req.body.family_name], (error, rows, field) => {
         rows.forEach(row => {
+            let text = fs.readFileSync(`text.txt`, `utf-8`);
+            text += `INSERT INTO transactions (image, email, family_name, title, description, coin, state) VALUES ("${row.image}", "${row.email}", "${row.family_name}", "${row.title}", "${row.description.replace(`\n`, ` `)}", "${row.coin}", "${row.state}");\n`;
+            fs.writeFileSync(`text.txt`, text);
+        });
+        
+        rows.forEach(row => {
             if (row.image) {
                 const data = fs.readFileSync(row.image);
                 const base64ImageData = data.toString('base64');
